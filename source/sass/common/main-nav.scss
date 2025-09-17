@@ -1,0 +1,24 @@
+.main-nav {
+  background-color: #ffffff;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 360px;
+  }
+
+  &__list {
+    @include clear-list;
+    display: flex;
+  }
+
+  &__icons {
+    @include clear-list;
+    display: flex;
+    margin-left: auto;
+  }
+
+}
