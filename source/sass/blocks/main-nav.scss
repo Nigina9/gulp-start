@@ -7,18 +7,61 @@
   }
 
   &__logo {
+    @media (min-width:768px){
+      margin-right: 140px;
+    }
+    @media (min-width:728px){
     margin-right: 360px;
+    }
+  }
+  &__img {
+    width: 74px;
+    height: 25px;
+     @media (min-width:768px) {
+    width: 93px;
+    height: 31px;
+    }
   }
 
   &__list {
     @include clear-list;
     display: flex;
+    flex-direction: column;
+    @media (min-width:768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+   color: #000000;
+   font-size: 20px;
+   font-weight: 400;
+   text-transform: capitalize;
+
+   @media(min-width:768px){
+    font-size: 16px;
+   }
   }
 
   &__icons {
     @include clear-list;
     display: flex;
     margin-left: auto;
+  }
+  &__iconimg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 16px;
+    @include clear-button;
+
+    &--find {
+      background-image: url("../../img/icon_find.svg");
+    }
+    &--shop{
+      background-image: url("../../img/icon_shop.svg");
+    }
   }
 
 }
